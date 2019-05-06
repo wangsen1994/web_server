@@ -1,9 +1,0 @@
-Log设计主要仿照了muduo库的异步设计方法，主要作了简化操作
-
-主要包括Logging、Logstream、FileUtil、AsyncLogging、LogFile以及相应的Thread与Mutex
-
-FileUtil主要负责底层写操作，由于是异步单线程Log，使用fwrite_unlocked；
-Logfile主要包装FileUtil文件，负责Log文件名设置与flush；
-Logstream主要重载各种operator<<与构造缓冲buffer，其中用到了C++的unique智能指针，方便异步Log缓存的交换
-AsyncLogging主要负责启动Log线程以及与其他线程Log信息的对接，其中采用双缓冲的设计，Log线程与AsyncLogging线程各两个。缓冲区达到一定状态后，其会通知Log线程来取数据进行写入。
-Logging主要负责对外的接口，利用单例模式产生对外静态接口，并对外信息进行格式化。
