@@ -31,9 +31,9 @@
 ## Model
 并发模型采用Reactor + 非阻塞IO + 线程池（event per thread），新请求Round Robin分配，详情介绍请参考[并发模型](并发模型)
 
-![并发模型图](并发模型图.jpg)
+![并发模型图](https://github.com/wangsen1994/web_server/tree/master/datum/并发模型图.jpg)
 
 事件处理流程
 
-![事件处理流程](事件处理流程.jpg)
+![事件处理流程](https://github.com/wangsen1994/web_server/tree/master/datum/事件处理流程.jpg)
 
