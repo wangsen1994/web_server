@@ -1,0 +1,18 @@
+﻿  Validating sources
+  Copying sources remotely to '192.168.172.129'
+  Validating architecture
+  Starting remote build
+  Compiling sources:
+  AsyncLogging.cpp
+F:\graduate\coding\C++\webserver\senwang_web\senwang_web\noncopy.h(14,44): warning : no return statement in function returning non-void [-Wreturn-type]
+F:\graduate\coding\C++\webserver\senwang_web\senwang_web\noncopy.h(14,44): warning :   const noncopy& operator=(const noncopy&) {}
+F:\graduate\coding\C++\webserver\senwang_web\senwang_web\noncopy.h(14,44): warning :                                             ^
+F:\graduate\coding\C++\webserver\senwang_web\senwang_web\AsyncLogging.cpp(91,35): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+F:\graduate\coding\C++\webserver\senwang_web\senwang_web\AsyncLogging.cpp(91,35): warning :     logfile.append(buf, strlen(buf));
+F:\graduate\coding\C++\webserver\senwang_web\senwang_web\AsyncLogging.cpp(91,35): warning :                                    ^
+  main.cpp
+F:\graduate\coding\C++\webserver\senwang_web\senwang_web\noncopy.h(14,44): warning : no return statement in function returning non-void [-Wreturn-type]
+F:\graduate\coding\C++\webserver\senwang_web\senwang_web\noncopy.h(14,44): warning :   const noncopy& operator=(const noncopy&) {}
+F:\graduate\coding\C++\webserver\senwang_web\senwang_web\noncopy.h(14,44): warning :                                             ^
+  Linking objects
+  senwang_web.vcxproj -> F:\graduate\coding\C++\webserver\senwang_web\senwang_web\bin\x64\Debug\senwang_web.out
