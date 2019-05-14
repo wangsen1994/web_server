@@ -15,7 +15,8 @@
 - Complier: g++ 5.4.0
 
 ## Usage
-- 我使用的是vs2017远程调试linux虚拟机，直接运行代码即可
+- 我使用的是vs2017远程调试linux虚拟机，直接运行代码vs-project
+- linux下可直接运行linux-project
 
 ## Technical Points
 - 采用Reactor模式，使用Epoll边沿触发的IO多路复用技术 + 非阻塞IO
